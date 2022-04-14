@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html amp>
+   <head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,minimum-scale=1">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet" type="text/css">
+     <style amp-custom>#branch-sdk{position:fixed;bottom:0;left:0;right:0;}
+       body {
+         margin: 0;
+         word-wrap: break-word;
+         font-family: "Open Sans", Helvetica, serif;
+       }
+       /* ============ Portrait ============ */
+       .main-image {
+         width: 100%;
+         height: 250px;
+         height: 75vw;
+           background-image: url(https://animateme.app/parse/files/aZuk3YH3XUKZwKC7qr2Aef6MdIvIXbofWbhMbicY/1fd14bb07a68d6f52316cb2bb8d54afc_AnimateMe.gif);
+         background-size: cover;
+         background-position: top center;
+       }
+       #content-container {
+         box-sizing: border-box;
+         padding: 24px;
+         margin: 0 24px;
+         background-color: #fff;
+       }
+       .app-title {
+         font-size: 14px;
+         padding-bottom: 11px;
+         text-transform: uppercase;
+       }
+       .card-title {
+         font-size: 33px;
+         line-height: 36px;
+       }
+       .app-content {
+         padding-top: 10px;
+         padding-bottom: 100px;
+         font-size: 20px;
+       }
+       .input-wrapper {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 110px;
+         background-color: #fff;
+         box-shadow: 0px -20px 20px -8px rgba(255,255,255,1);
+       }
+       .input-container {
+         width: 100%;
+         padding: 0 24px;
+         text-align: center;
+         box-sizing: border-box;
+       }
+       .form-get-the-app {
+         display: -webkit-box;
+         display: flex;
+         text-align: center;
+         padding-top: 10px;
+         border-top: 2px solid #cecece;
+         min-height: 300px;
+       }
+       .input-label {
+         padding: 4px 10px;
+         font-size: 13px;
+         overflow: hidden;
+         word-wrap: break-word;
+         text-align: center;
+       }
+       .app-icon {
+         width: 62px;
+         height: 62px;
+         line-height: 62px;
+         background-size: 100% auto;
+           background-image: url(https://cdn.branch.io/branch-assets/1648557871882-og_image.png);
+       }
+       .cta-button {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         height: 62px;
+         line-height: 62px;
+         background-color: #444;
+         border-radius: 2px;
+         font-size: 20px;
+         padding: 0 20px;
+         margin-left: 10px;
+         color: #fff;
+         text-align: center;
+         text-decoration: none;
+         display: block;
+       }
+       /* No data (portrait) */
+       @media only screen and (orientation: portrait) {
+         .card--no-data .main-image {
+           background-image: url("http://s3-us-west-1.amazonaws.com/branch-assets/b_stripes-small.png");
+           background-size: auto;
+           background-position: top center;
+           background-repeat: repeat;
+           height: 190px;
+         }
+         .card--no-data > .app-icon {
+           position: absolute;
+           top: 160px;
+           left: 34px;
+         }
+         .card--no-data #content-container {
+           margin-top: 20px;
+         }
+         }
+         @media screen /* >= iPhone 5 */
+         and (min-device-width: 321px) {
+         .input-label {
+           font-size: 14px;
+         }
+       }
+       @media only screen /* >= iPhone 6 */
+         and (min-device-width: 375px)
+         and (orientation: portrait) {
+         .main-image {
+           height: 300px;
+           height: 80vw;
+         }
+         .app-content {
+           padding-bottom: 120px;
+         }
+         .input-wrapper {
+           height: 115px;
+         }
+       }
+       @media only screen /* >= iPhone 6+ */
+       and (min-device-width: 414px)
+       and (orientation: portrait) {
+         .main-image {
+           height: 390px;
+           height: 95vw;
+         }
+       }
+       /* ============ Landscape ============ */
+       @media only screen and (orientation: landscape){
+         .main-image {
+           position: fixed;
+           height: 100%;
+           height: 100vh;
+           width: 50%;
+         }
+         .input-wrapper {
+           right: 0;
+           left: auto;
+           width: 50%;
+         }
+         #content-container {
+           float: left;
+           width: 50%;
+           margin-left: 50%;
+         }
+         .input-wrapper {
+           height: 108px;
+         }
+         .app-content {
+           padding-bottom: 110px;
+         }
+         .form-get-the-app {
+           padding-top: 8px;
+         }
+         .input-container {
+           left: 50%;
+         }
+         .cta-button {
+           height: 44px;
+           line-height: 44px;
+           padding: 0 5px;
+           margin-left: 50px;
+         }
+         .app-icon {
+           width: 44px;
+           height: 44px;
+         }
+         /* No data (landscape) */
+         .card--no-data .main-image {
+           height: 100%;
+         }
+         .card--no-data > .app-icon {
+           display: none;
+         }
+         .card--no-data #content-container {
+           margin-top: 0;
+         }
+       }
+       @media only screen /* >= iPhone 6 */
+       and (min-device-width: 645px)
+       and (orientation: landscape) {
+         .form-get-the-app {
+           padding-top: 8px;
+         }
+         .cta-button {
+           height: 62px;
+           line-height: 62px;
+           padding: 0 20px;
+           margin-left: 70px;
+         }
+         .app-icon {
+           width: 62px;
+           height: 62px;
+           top: -2px;
+         }
+       }
+       /* Reusables */
+       .text-bold {
+         font-weight: 700
+       }
+       .text-light {
+         font-weight: 300;
+       }
+       .cta-button--no-app-icon {
+         margin-left: 0;
+       }
+     </style>
+       <link rel="alternate" href="ios-app://667012622/animateme/open?_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT08t0UvMy8xNLEnNTdVLLCjQ9zMOjMp2KTBMLkgCAJAg6lglAAAA&amp;link_click_id=link-1042979868579061193">
+       <link rel="apple-touch-icon" href="https://animateme.app/parse/files/aZuk3YH3XUKZwKC7qr2Aef6MdIvIXbofWbhMbicY/1fd14bb07a68d6f52316cb2bb8d54afc_AnimateMe.gif">
+       <meta property="al:ios:url" content="animateme://open?_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT08t0UvMy8xNLEnNTdVLLCjQ9zMOjMp2KTBMLkgCAJAg6lglAAAA&amp;link_click_id=link-1042979868579061193-eyIkb2dfdGl0bGUiOiJPaCBIYXBweSBEYXlzISIsIiRwdWJsaWNseV9pbmRleGFibGUiOnRydWUsIiRvZ19pbWFnZSI6Imh0dHBzOi8vYW5pbWF0ZW1lLmFwcC9wYXJzZS9maWxlcy9hWnVrM1lIM1hVS1p3S0M3cXIyQWVmNk1kSXZJWGJvZldiaE1iaWNZLzFmZDE0YmIwN2E2OGQ2ZjUyMzE2Y2IyYmI4ZDU0YWZjX0FuaW1hdGVNZS5naWYiLCJnaWZJZCI6IjU3TGt2VDRQeTYiLCJ-Y3JlYXRpb25fc291cmNlIjozLCIkbG9jYWxseV9pbmRleGFibGUiOnRydWUsImdpZkNsYXNzIjoiUEZPYmplY3QiLCIkb2dfaW1hZ2Vfd2lkdGgiOiI0OTgiLCIkb2dfaW1hZ2VfdXJsIjoiaHR0cHM6Ly9hbmltYXRlbWUuYXBwL3BhcnNlL2ZpbGVzL2FadWszWUgzWFVLWndLQzdxcjJBZWY2TWRJdklYYm9mV2JoTWJpY1kvMWZkMTRiYjA3YTY4ZDZmNTIzMTZjYjJiYjhkNTRhZmNfQW5pbWF0ZU1lLmdpZiIsIn5mZWF0dXJlIjoibmV3R0lGIiwiJG9nX3VybCI6Imh0dHBzOi8vYW5pbWF0ZW1lLmFwcC9wYXJzZS9maWxlcy9hWnVrM1lIM1hVS1p3S0M3cXIyQWVmNk1kSXZJWGJvZldiaE1iaWNZLzFmZDE0YmIwN2E2OGQ2ZjUyMzE2Y2IyYmI4ZDU0YWZjX0FuaW1hdGVNZS5naWYiLCIkb2dfdHlwZSI6InZpZGVvLm90aGVyIiwiK3VybCI6Imh0dHBzOi8vZ2V0LmFuaW1hdGVtZS5hcHAvTjNRWmtEcDFjcGIiLCJ-dGFncyI6WyJEYW5jZSIsIlBhcnR5Il0sIiRvZ19pbWFnZV9oZWlnaHQiOiIzNzQiLCIkY2Fub25pY2FsX2lkZW50aWZpZXIiOiJQRk9iamVjdC9jZmlwaDZ4WFN2IiwiJG9uZV90aW1lX3VzZSI6ZmFsc2UsIn5pZCI6IjEwNDI5Nzk4Njg1NzkwNjExOTMiLCJ-Y2FtcGFpZ24iOiJzbUF1dG8iLCIkY2Fub25pY2FsX3VybCI6Imh0dHBzOi8vYW5pbWF0ZW1lLmFwcC9wYXJzZS9maWxlcy9hWnVrM1lIM1hVS1p3S0M3cXIyQWVmNk1kSXZJWGJvZldiaE1iaWNZLzFmZDE0YmIwN2E2OGQ2ZjUyMzE2Y2IyYmI4ZDU0YWZjX0FuaW1hdGVNZS5naWYiLCJ-Y2hhbm5lbCI6ImZhY2Vib29rIiwiK2RvbWFpbiI6ImdldC5hbmltYXRlbWUuYXBwIiwiK2NsaWNrX3RpbWVzdGFtcCI6MTY0OTk0NDkzM30">
+       <meta name="twitter:app:url:iphone" content="animateme://open?_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT08t0UvMy8xNLEnNTdVLLCjQ9zMOjMp2KTBMLkgCAJAg6lglAAAA&amp;link_click_id=link-1042979868579061193-eyIkb2dfdGl0bGUiOiJPaCBIYXBweSBEYXlzISIsIiRwdWJsaWNseV9pbmRleGFibGUiOnRydWUsIiRvZ19pbWFnZSI6Imh0dHBzOi8vYW5pbWF0ZW1lLmFwcC9wYXJzZS9maWxlcy9hWnVrM1lIM1hVS1p3S0M3cXIyQWVmNk1kSXZJWGJvZldiaE1iaWNZLzFmZDE0YmIwN2E2OGQ2ZjUyMzE2Y2IyYmI4ZDU0YWZjX0FuaW1hdGVNZS5naWYiLCJnaWZJZCI6IjU3TGt2VDRQeTYiLCJ-Y3JlYXRpb25fc291cmNlIjozLCIkbG9jYWxseV9pbmRleGFibGUiOnRydWUsImdpZkNsYXNzIjoiUEZPYmplY3QiLCIkb2dfaW1hZ2Vfd2lkdGgiOiI0OTgiLCIkb2dfaW1hZ2VfdXJsIjoiaHR0cHM6Ly9hbmltYXRlbWUuYXBwL3BhcnNlL2ZpbGVzL2FadWszWUgzWFVLWndLQzdxcjJBZWY2TWRJdklYYm9mV2JoTWJpY1kvMWZkMTRiYjA3YTY4ZDZmNTIzMTZjYjJiYjhkNTRhZmNfQW5pbWF0ZU1lLmdpZiIsIn5mZWF0dXJlIjoibmV3R0lGIiwiJG9nX3VybCI6Imh0dHBzOi8vYW5pbWF0ZW1lLmFwcC9wYXJzZS9maWxlcy9hWnVrM1lIM1hVS1p3S0M3cXIyQWVmNk1kSXZJWGJvZldiaE1iaWNZLzFmZDE0YmIwN2E2OGQ2ZjUyMzE2Y2IyYmI4ZDU0YWZjX0FuaW1hdGVNZS5naWYiLCIkb2dfdHlwZSI6InZpZGVvLm90aGVyIiwiK3VybCI6Imh0dHBzOi8vZ2V0LmFuaW1hdGVtZS5hcHAvTjNRWmtEcDFjcGIiLCJ-dGFncyI6WyJEYW5jZSIsIlBhcnR5Il0sIiRvZ19pbWFnZV9oZWlnaHQiOiIzNzQiLCIkY2Fub25pY2FsX2lkZW50aWZpZXIiOiJQRk9iamVjdC9jZmlwaDZ4WFN2IiwiJG9uZV90aW1lX3VzZSI6ZmFsc2UsIn5pZCI6IjEwNDI5Nzk4Njg1NzkwNjExOTMiLCJ-Y2FtcGFpZ24iOiJzbUF1dG8iLCIkY2Fub25pY2FsX3VybCI6Imh0dHBzOi8vYW5pbWF0ZW1lLmFwcC9wYXJzZS9maWxlcy9hWnVrM1lIM1hVS1p3S0M3cXIyQWVmNk1kSXZJWGJvZldiaE1iaWNZLzFmZDE0YmIwN2E2OGQ2ZjUyMzE2Y2IyYmI4ZDU0YWZjX0FuaW1hdGVNZS5naWYiLCJ-Y2hhbm5lbCI6ImZhY2Vib29rIiwiK2RvbWFpbiI6ImdldC5hbmltYXRlbWUuYXBwIiwiK2NsaWNrX3RpbWVzdGFtcCI6MTY0OTk0NDkzM30">
+       <meta property="al:ios:app_store_id" content="667012622">
+       <meta name="twitter:app:id:iphone" content="667012622">
+       <meta property="al:ios:app_name" content="Animate Me">
+       <meta name="twitter:app:name:iphone" content="Animate Me">
+           <meta name="twitter:card" content="summary_large_image">
+       <meta property="og:image" content="https://animateme.app/parse/files/aZuk3YH3XUKZwKC7qr2Aef6MdIvIXbofWbhMbicY/1fd14bb07a68d6f52316cb2bb8d54afc_AnimateMe.gif">
+         <meta name="twitter:image:src" content="https://animateme.app/parse/files/aZuk3YH3XUKZwKC7qr2Aef6MdIvIXbofWbhMbicY/1fd14bb07a68d6f52316cb2bb8d54afc_AnimateMe.gif">
+       <meta property="og:image:width" content="498">
+       <meta property="twitter:image:width" content="498">
+       <meta property="og:image:height" content="374">
+       <meta property="twitter:image:height" content="374">
+       <title>Oh Happy Days!</title>
+       <meta property="og:title" content="Oh Happy Days!">
+         <meta name="twitter:title" content="Oh Happy Days!">
+       <meta property="og:description" content="Make custom face swap GIFs, Videos &amp; eCards">
+         <meta name="twitter:description" content="Make custom face swap GIFs, Videos &amp; eCards">
+       <meta property="fb:app_id" content="517431428334583">
+       <meta property="og:url" content="https://animateme.app/parse/files/aZuk3YH3XUKZwKC7qr2Aef6MdIvIXbofWbhMbicY/1fd14bb07a68d6f52316cb2bb8d54afc_AnimateMe.gif">
+       <meta property="og:type" content="video.other">
+       <meta name="twitter:app:country" content="US">
+   <script async src="https://cdn.ampproject.org/v0.js"></script><script async src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js" custom-element="amp-iframe"></script><script async src="https://cdn.ampproject.org/v0/amp-list-0.1.js" custom-element="amp-list"></script><script async src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" custom-template="amp-mustache"></script><link rel="canonical" href="https://get.animateme.app/N3QZkDp1cpb">
+</head>
+   <body>
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+     <div class="card center">
+       <div class="main-image"></div>
+       <div id="content-container">
+         <div class="app-title text-bold">Animate Me</div>
+         <div class="card-title text-light">Oh Happy Days!</div>
+         <div class="app-content text-light">Make custom face swap GIFs, Videos &amp; eCards</div>
+       </div>
+       <div class="input-wrapper">
+         <div class="input-container">
+           <div class="input-label text-light">See this content immediately after install</div>
+           <div class="form-get-the-app">
+               <div class="app-icon"> </div>
+             <amp-list src="https://get.animateme.app/N3QZkDp1cpb?__branch_amp_json=1" layout="flex-item">
+      <template type="amp-mustache" id="cta-template">
+        <a href="%7B%7Baction%7D%7D" class="cta-button text-light">
+               Get The App
+             </a>
+      <amp-iframe id="branch-sdk" src="/amp-iframe-redirect?scheme_redirect=%7B%7Bscheme_redirect%7D%7D&amp;redirect_strategy=%7B%7Bredirect_strategy%7D%7D&amp;app_id=86527650020983439&amp;has_app=false" sandbox="allow-scripts allow-top-navigation" height="11" layout="fixed-height" frameborder="0"></amp-iframe></template>
+    </amp-list>
+           </div>
+         </div>
+       </div>
+     </div>
+   <script type="text/javascript">var fb_list = ["https://cdn.branch.io/branch-assets/1422285949126-logo.png","id667012622","https://itunes.apple.com/app/id667012622?ls=1&mt=8","https://itunes.apple.com/app/id667012622?ls=1&mt=8","https://itunes.apple.com/app/id667012622?ls=1&mt=8","https://itunes.apple.com/app/id667012622?ls=1&mt=8","get.animateme.app","bnc.lt","bnc.lt","https://cdn.branch.io/branch-assets/1648557871882-og_image.png","https://itunes.apple.com/app/id667012622?ls=1&mt=8","https://animateme.app/parse/files/aZuk3YH3XUKZwKC7qr2Aef6MdIvIXbofWbhMbicY/1fd14bb07a68d6f52316cb2bb8d54afc_AnimateMe.gif","https://animateme.app/parse/files/aZuk3YH3XUKZwKC7qr2Aef6MdIvIXbofWbhMbicY/1fd14bb07a68d6f52316cb2bb8d54afc_AnimateMe.gif"];
+          </script>
+</body>
+ </html>
